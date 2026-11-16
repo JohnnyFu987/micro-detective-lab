@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">分布密度抽象示意圖</title>
+  <desc id="desc">藍綠小點在左側稀疏、右側密集。</desc>
+  <defs>
+    <pattern id="paper" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1" fill="#9fb9b3" opacity=".3"/></pattern>
+  </defs>
+  <rect width="800" height="600" fill="#dce9df"/><rect width="800" height="600" fill="url(#paper)"/>
+  <g fill="#4a9d96" stroke="#1f6867" stroke-width="5">
+    <circle cx="82" cy="92" r="18"/><circle cx="206" cy="165" r="26"/><circle cx="120" cy="312" r="14"/>
+    <circle cx="276" cy="430" r="22"/><circle cx="92" cy="520" r="27"/><circle cx="350" cy="90" r="16"/>
+    <circle cx="430" cy="215" r="22"/><circle cx="488" cy="170" r="18"/><circle cx="530" cy="238" r="26"/>
+    <circle cx="590" cy="194" r="17"/><circle cx="642" cy="247" r="29"/><circle cx="704" cy="186" r="19"/>
+    <circle cx="456" cy="324" r="16"/><circle cx="516" cy="350" r="24"/><circle cx="582" cy="307" r="20"/>
+    <circle cx="646" cy="358" r="22"/><circle cx="714" cy="326" r="16"/><circle cx="748" cy="410" r="28"/>
+    <circle cx="428" cy="448" r="25"/><circle cx="500" cy="470" r="18"/><circle cx="570" cy="438" r="27"/>
+    <circle cx="635" cy="482" r="18"/><circle cx="700" cy="510" r="24"/>
+  </g>
+  <g fill="#163f49" opacity=".55">
+    <circle cx="206" cy="165" r="8"/><circle cx="530" cy="238" r="9"/><circle cx="642" cy="247" r="10"/>
+    <circle cx="516" cy="350" r="7"/><circle cx="570" cy="438" r="10"/><circle cx="700" cy="510" r="8"/>
+  </g>
+  <path d="M380 40v520" stroke="#fffdf7" stroke-width="3" stroke-dasharray="10 14" opacity=".7"/>
+</svg>
+

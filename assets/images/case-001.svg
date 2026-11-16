@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">膜邊界抽象示意圖</title>
+  <desc id="desc">暖粉與紫色細胞狀圓形聚集，部分輪廓完整、部分中斷。</desc>
+  <defs>
+    <radialGradient id="bg" cx="42%" cy="38%" r="78%">
+      <stop offset="0" stop-color="#f6c8bf"/><stop offset="1" stop-color="#d9989e"/>
+    </radialGradient>
+    <filter id="grain"><feTurbulence baseFrequency=".8" numOctaves="2" seed="9" result="n"/><feBlend in="SourceGraphic" in2="n" mode="soft-light"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g fill="#eab2b0" stroke="#784060" stroke-width="14" opacity=".94" filter="url(#grain)">
+    <circle cx="170" cy="130" r="78"/><circle cx="345" cy="115" r="72"/><circle cx="520" cy="130" r="88"/>
+    <circle cx="250" cy="300" r="92"/><circle cx="460" cy="315" r="105"/><circle cx="675" cy="280" r="82"/>
+    <circle cx="120" cy="475" r="92"/><circle cx="350" cy="505" r="80"/>
+  </g>
+  <g fill="#9a5476" opacity=".78">
+    <ellipse cx="154" cy="142" rx="23" ry="31"/><ellipse cx="356" cy="100" rx="28" ry="20"/>
+    <ellipse cx="520" cy="144" rx="31" ry="25"/><ellipse cx="260" cy="292" rx="25" ry="36"/>
+    <ellipse cx="435" cy="324" rx="38" ry="28"/><ellipse cx="672" cy="280" rx="25" ry="33"/>
+  </g>
+  <g fill="none" stroke="#8d4f67" stroke-width="13" stroke-linecap="round">
+    <path d="M620 438a78 78 0 0 1 105-18"/><path d="M744 451a78 78 0 0 1-32 106"/>
+    <path d="M514 493a66 66 0 0 1 46-61"/><path d="M590 438a66 66 0 0 1 37 74"/>
+  </g>
+  <g fill="#8e526f" opacity=".56"><circle cx="48" cy="240" r="19"/><circle cx="580" cy="540" r="24"/><circle cx="760" cy="90" r="20"/></g>
+</svg>
+

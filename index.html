@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="微觀偵探所是一個以抽象病理切片示意圖，引導初學者練習描述、比較與推論的互動式網站。"
+    />
+    <meta name="theme-color" content="#102a2e" />
+    <title>微觀偵探所｜醫療影像觀察練習室</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/cases.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到主要內容</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="微觀偵探所首頁">
+        <span class="brand-mark" aria-hidden="true">µ</span>
+        <span>微觀偵探所</span>
+      </a>
+      <nav aria-label="主要導覽">
+        <a href="#practice">觀察任務</a>
+        <a href="#method">偵探方法</a>
+        <a href="#boundary">使用界線</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">MICRO DETECTIVE LAB · 001</p>
+          <h1 id="hero-title">先別急著找答案，<br /><em>先學會看見。</em></h1>
+          <p class="hero-intro">
+            病理影像不是找不同遊戲。從形狀、分布到邊界，練習把「我覺得」變成可以說明的觀察。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#practice">領取第一個任務</a>
+            <a class="text-link" href="#method">先看觀察方法 <span aria-hidden="true">↘</span></a>
+          </div>
+        </div>
+
+        <div class="hero-specimen" aria-label="抽象顯微鏡切片互動區">
+          <div class="specimen-meta" aria-hidden="true">
+            <span>SLIDE A-01</span>
+            <span>DEMO / 20×</span>
+          </div>
+          <div class="scope-frame">
+            <div class="scope-grid" aria-hidden="true"></div>
+            <img
+              id="hero-slide"
+              src="assets/images/case-001.svg"
+              alt="暖粉與紫色細胞狀圓形聚集，其中部分邊界較深"
+            />
+            <span class="focus-crosshair" aria-hidden="true"></span>
+          </div>
+          <label class="focus-control" for="focus-range">
+            <span>調整焦距</span>
+            <input id="focus-range" type="range" min="0" max="10" value="7" />
+            <output id="focus-value" for="focus-range">清晰度 70%</output>
+          </label>
+        </div>
+      </section>
+
+      <section class="manifesto" aria-label="觀察原則">
+        <p>真正的觀察不是猜名稱，</p>
+        <p>而是留下別人能重現的線索。</p>
+      </section>
+
+      <section class="practice section-shell" id="practice" aria-labelledby="practice-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">OBSERVATION MISSIONS</p>
+            <h2 id="practice-title">今日觀察任務</h2>
+          </div>
+          <p>每張都是抽象示意圖。先完成自己的描述，再打開提示與重點。</p>
+        </div>
+
+        <div id="case-grid" class="case-grid" aria-live="polite">
+          <p class="loading-note">正在整理觀察任務⋯⋯</p>
+        </div>
+        <noscript>
+          <p class="noscript-note">請啟用 JavaScript 以操作觀察卡；你仍可閱讀下方的觀察方法與使用界線。</p>
+        </noscript>
+      </section>
+
+      <section class="method section-shell" id="method" aria-labelledby="method-title">
+        <div class="method-intro">
+          <p class="eyebrow">THE THREE-STEP METHOD</p>
+          <h2 id="method-title">一套可以重複使用的<br />微觀偵探方法</h2>
+          <p>看不懂沒有關係。先把推論放到最後，觀察就會變得比較可靠。</p>
+        </div>
+
+        <ol class="method-list">
+          <li>
+            <span class="method-number">01</span>
+            <div>
+              <h3>描述 Describe</h3>
+              <p>只說看得到的形狀、顏色、數量與位置，暫時不替它命名。</p>
+            </div>
+          </li>
+          <li>
+            <span class="method-number">02</span>
+            <div>
+              <h3>比較 Compare</h3>
+              <p>尋找區域之間的相同與不同，也留意你選擇忽略了什麼。</p>
+            </div>
+          </li>
+          <li>
+            <span class="method-number">03</span>
+            <div>
+              <h3>推論 Infer</h3>
+              <p>提出暫時解釋，同時寫下還需要哪些證據才能支持它。</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="boundary section-shell" id="boundary" aria-labelledby="boundary-title">
+        <div class="boundary-card">
+          <p class="eyebrow">READ BEFORE YOU INFER</p>
+          <h2 id="boundary-title">看得更清楚，<br />也要知道哪裡看不見。</h2>
+          <p>
+            影像只是整個判斷流程的一部分。取樣位置、染色品質、掃描設備與臨床背景，都可能改變我們看到的內容。
+          </p>
+        </div>
+        <div class="boundary-rules">
+          <div>
+            <span aria-hidden="true">01</span>
+            <p>本站圖片皆為自行繪製的抽象示意，不是真實病例。</p>
+          </div>
+          <div>
+            <span aria-hidden="true">02</span>
+            <p>練習答案是觀察範例，不代表唯一解讀或醫療診斷。</p>
+          </div>
+          <div>
+            <span aria-hidden="true">03</span>
+            <p>AI 可以協助整理線索，但不能取代專業醫療判斷。</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <span class="brand-mark" aria-hidden="true">µ</span>
+        <p><strong>微觀偵探所</strong><br />把直覺變成可以討論的觀察。</p>
+      </div>
+      <p>教學示範專案 · 不提供醫療診斷</p>
+      <a href="AGENTS.md">閱讀專案規則</a>
+    </footer>
+  </body>
+</html>
+
