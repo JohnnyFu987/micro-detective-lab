@@ -4,6 +4,11 @@
 
 > 本網站只用於課堂與介面設計示範，不提供診斷，也不使用真實病人資料。
 
+## 連結
+
+- GitHub Repository：<https://github.com/JohnnyFu987/micro-detective-lab>
+- 線上網站：<https://johnnyfu987.github.io/micro-detective-lab/>
+
 ## 網頁功能
 
 - 互動式焦距滑桿
